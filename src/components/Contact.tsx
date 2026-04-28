@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { Mail, Github, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
+import { Github, Linkedin } from "./SocialIcons";
 
 const contactLinks = [
   { icon: <Mail size={20} />, label: "Email", value: "minhajasghar5@gmail.com", href: "mailto:minhajasghar5@gmail.com" },
