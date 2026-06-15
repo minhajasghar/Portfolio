@@ -93,7 +93,7 @@ export default function Contact() {
                   type="text"
                   required
                   className="w-full p-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 outline-none transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Your name"
                 />
               </div>
               <div className="space-y-2">
@@ -103,7 +103,7 @@ export default function Contact() {
                   type="email"
                   required
                   className="w-full p-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 outline-none transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="your@email.com"
                 />
               </div>
               <div className="space-y-2">
