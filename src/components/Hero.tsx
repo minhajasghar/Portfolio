@@ -52,7 +52,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </a>
               <a 
-                href="/cv.pdf" 
+                href="/Minhaj_Asghar_CV.pdf" 
                 download="Minhaj_Asghar_CV.pdf"
                 className="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-semibold flex items-center gap-2 group backdrop-blur-sm"
               >
