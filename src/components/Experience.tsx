@@ -7,7 +7,7 @@ const experiences = [
   {
     role: "AI Intern",
     company: "TNT Innovations",
-    period: "Onsite | April 2025 – Present",
+    period: "Onsite | April 2026 – Present",
     bullets: [
       "Designing end-to-end AI pipelines for real-time video analytics and automated monitoring.",
       "Collaborating with the onsite engineering team to deploy CV models on edge hardware.",
