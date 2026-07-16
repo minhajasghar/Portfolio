@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Mail } from "lucide-react";
-import { Github, Linkedin } from "./SocialIcons";
+import { Github, Linkedin, Whatsapp } from "./SocialIcons";
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -64,6 +64,14 @@ export default function Navbar() {
             className="text-zinc-400 hover:text-white transition-colors"
           >
             <Linkedin size={20} />
+          </a>
+          <a
+            href="https://wa.me/923320271743"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-zinc-400 hover:text-white transition-colors"
+          >
+            <Whatsapp size={20} />
           </a>
           <a
             href="mailto:minhajasghar5@gmail.com"
