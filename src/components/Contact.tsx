@@ -4,10 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { Mail, MapPin, Send } from "lucide-react";
-import { Github, Linkedin } from "./SocialIcons";
+import { Github, Linkedin, Whatsapp } from "./SocialIcons";
 
 const contactLinks = [
   { icon: <Mail size={20} />, label: "Email", value: "minhajasghar5@gmail.com", href: "mailto:minhajasghar5@gmail.com" },
+  { icon: <Whatsapp size={20} />, label: "WhatsApp", value: "+92 332 0271743", href: "https://wa.me/923320271743" },
   { icon: <Github size={20} />, label: "GitHub", value: "github.com/minhajasghar", href: "https://github.com/minhajasghar" },
   { icon: <Linkedin size={20} />, label: "LinkedIn", value: "linkedin.com/in/minhajasghar", href: "https://linkedin.com/in/minhajasghar" },
   { icon: <MapPin size={20} />, label: "Location", value: "Lahore, Pakistan", href: "#" },
