@@ -17,7 +17,7 @@ const experiences = [
   {
     role: "Machine Learning Intern",
     company: "Elevvo Pathways",
-    period: "Remote | July 2025 – August 2025",
+    period: "Remote | September 2025",
     bullets: [
       "Applying advanced ML models to large-scale real-world datasets for predictive analytics.",
       "Utilizing Scikit-learn and Pandas for feature engineering and performance optimization.",
