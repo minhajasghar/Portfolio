@@ -7,21 +7,21 @@ const projects = [
   {
     title: "Stafflytics AI",
     description: "AI-powered business intelligence system for restaurants using computer vision and machine learning. Features real-time staff tracking, automated attendance, and performance analytics.",
-    tags: ["Python", "YOLO", "Computer Vision", "ML"],
+    tags: ["YOLOv8-Pose", "Flask", "MySQL", "RTSP"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/Stafflytics-AI"
   },
   {
     title: "Brandflux",
     description: "A brand content automation platform with client login. Clients submit their brand website and app, then receive ready-to-post content for Instagram, Facebook, and LinkedIn.",
-    tags: ["Next.js", "AI", "Social Media", "Content"],
+    tags: ["Next.js", "FastAPI", "Gemini AI", "Web Scrapping"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/Brandflux"
   },
   {
     title: "DocSlot",
     description: "Full-stack clinic management system with multi-doctor support, live token-based queue, patient self-booking, billing tracker, and WhatsApp notifications. Built for real-world clinic use.",
-    tags: ["Next.js", "Node.js", "SQLite", "JWT"],
+    tags: ["Next.js", "Node.js", "SQLite", "Whatsapp API"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/DocSlot"
   },
