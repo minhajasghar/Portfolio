@@ -17,7 +17,7 @@ const projects = [
     tags: ["Next.js", "AI", "Social Media", "Content"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/Brandflux"
-  }
+  },
   {
     title: "DocSlot",
     description: "Full-stack clinic management system with multi-doctor support, live token-based queue, patient self-booking, billing tracker, and WhatsApp notifications. Built for real-world clinic use.",
