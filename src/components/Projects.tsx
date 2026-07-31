@@ -12,19 +12,20 @@ const projects = [
     githubUrl: "https://github.com/minhajasghar/Stafflytics-AI"
   },
   {
-    title: "SmartAttend AI",
-    description: "Intelligent attendance and productivity system using computer vision. Implements real-time detection, zone-based activity tracking, and AI-powered assistant.",
-    tags: ["OpenCV", "YOLO", "SQLite", "Flask"],
-    flagship: true,
-    githubUrl: "https://github.com/minhajasghar/SmartAttend-AI"
-  },
-  {
     title: "Brandflux",
     description: "A brand content automation platform with client login. Clients submit their brand website and app, then receive ready-to-post content for Instagram, Facebook, and LinkedIn.",
     tags: ["Next.js", "AI", "Social Media", "Content"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/Brandflux"
   }
+  {
+    title: "DocSlot",
+    description: "Full-stack clinic management system with multi-doctor support, live token-based queue, patient self-booking, billing tracker, and WhatsApp notifications. Built for real-world clinic use.",
+    tags: ["Next.js", "Node.js", "SQLite", "JWT"],
+    flagship: true,
+    githubUrl: "https://github.com/minhajasghar/DocSlot"
+  },
+
 ];
 
 export default function Projects() {
