@@ -13,27 +13,27 @@ const skills = [
   {
     category: "Computer Vision",
     icon: <Cpu className="text-purple-500" />,
-    items: ["OpenCV", "YOLO", "CNNs", "Face Recognition", "Image Processing"]
-  },
-  {
-    category: "Libraries",
-    icon: <Database className="text-green-500" />,
-    items: ["Pandas", "NumPy", "scikit-learn", "TensorFlow"]
+    items: ["OpenCV", "YOLOv8/YOLO11", "CNNs", "Face Recognition", "Real-time Video Processing"]
   },
   {
     category: "GenAI & Automation",
     icon: <PenTool className="text-yellow-500" />,
-    items: ["LangChain", "RAG Systems", "AI Agents", "n8n"]
+    items: ["LangChain", "RAG Systems", "AI Agents", "Gemini API", "Prompt Engineering"]
   },
   {
-    category: "Backend & Data",
+    category: "Full-Stack Development",
     icon: <Terminal className="text-red-500" />,
-    items: ["API Integration", "SQL", "Data Preprocessing"]
+    items: ["Next.js", "Node.js / Express", "FastAPI", "TypeScript", "REST APIs"]
   },
   {
-    category: "Tools",
+    category: "Data & Databases",
+    icon: <Database className="text-green-500" />,
+    items: ["MySQL", "SQLite", "Prisma", "Supabase", "Pandas / NumPy"]
+  },
+  {
+    category: "Deployment & Tools",
     icon: <Layout className="text-cyan-500" />,
-    items: ["GitHub", "Jupyter", "Google Colab", "AWS"]
+    items: ["Vercel", "Railway", "Contabo VPS", "PM2 / Nginx", "GitHub"]
   }
 ];
 
