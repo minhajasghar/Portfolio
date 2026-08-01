@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, X, Send, Bot, User, Loader2 } from "lucide-react";
+import { MessageSquare, X, Send, Bot, Loader2 } from "lucide-react";
 
 type Message = {
   role: "user" | "assistant";
@@ -15,6 +15,16 @@ const KNOWLEDGE_BASE = {
   skills: "He is proficient in Python, YOLO, OpenCV, TensorFlow, PyTorch, and Flask. He also has strong experience in SQL and cloud deployments.",
   contact: "You can contact Minhaj via the contact form on this website or email him at minhajasghar5@gmail.com. He is also active on LinkedIn and GitHub.",
   experience: "He has completed 4+ internships in the AI field and is currently working on high-impact intelligent monitoring solutions."
+};
+
+const getLocalResponse = (query: string): string => {
+  const q = query.toLowerCase();
+  if (q.includes("project") || q.includes("work")) return KNOWLEDGE_BASE.projects;
+  if (q.includes("about") || q.includes("who is")) return KNOWLEDGE_BASE.about;
+  if (q.includes("skill") || q.includes("tech") || q.includes("language")) return KNOWLEDGE_BASE.skills;
+  if (q.includes("contact") || q.includes("email") || q.includes("hire")) return KNOWLEDGE_BASE.contact;
+  if (q.includes("experience") || q.includes("internship")) return KNOWLEDGE_BASE.experience;
+  return "That's a great question! Based on Minhaj's portfolio, he specializes in AI and Machine Learning. For specific details about his projects or skills, feel free to ask!";
 };
 
 export default function AIAssistant() {
@@ -42,20 +52,29 @@ export default function AIAssistant() {
     setMessages(prev => [...prev, { role: "user", content: userMessage }]);
     setIsTyping(true);
 
-    // Simulate AI thinking
-    setTimeout(() => {
-      let response = "That's a great question! Based on Minhaj's portfolio, he specializes in AI and Machine Learning. For specific details about his projects or skills, feel free to ask!";
-      
-      const query = userMessage.toLowerCase();
-      if (query.includes("project") || query.includes("work")) response = KNOWLEDGE_BASE.projects;
-      else if (query.includes("about") || query.includes("who is")) response = KNOWLEDGE_BASE.about;
-      else if (query.includes("skill") || query.includes("tech") || query.includes("language")) response = KNOWLEDGE_BASE.skills;
-      else if (query.includes("contact") || query.includes("email") || query.includes("hire")) response = KNOWLEDGE_BASE.contact;
-      else if (query.includes("experience") || query.includes("internship")) response = KNOWLEDGE_BASE.experience;
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: [...messages, { role: "user", content: userMessage }] }),
+      });
 
-      setMessages(prev => [...prev, { role: "assistant", content: response }]);
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data?.error ?? "Something went wrong.");
+      }
+
+      setMessages(prev => [...prev, { role: "assistant", content: data.text }]);
+    } catch (err) {
+      console.error("Gemini unavailable, using local fallback:", err);
+      setMessages(prev => [
+        ...prev,
+        { role: "assistant", content: getLocalResponse(userMessage) }
+      ]);
+    } finally {
       setIsTyping(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -67,7 +86,7 @@ export default function AIAssistant() {
       >
         <MessageSquare size={24} className="group-hover:rotate-12 transition-transform" />
         <span className="absolute -top-12 right-0 bg-zinc-900 text-white text-xs px-3 py-1.5 rounded-lg border border-white/10 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-          Ask Minhaj's AI
+          Ask Minhaj&apos;s AI
         </span>
       </button>
 
@@ -87,7 +106,7 @@ export default function AIAssistant() {
                   <Bot size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold">Minhaj's Assistant</h3>
+                  <h3 className="text-sm font-bold">Minhaj&apos;s Assistant</h3>
                   <div className="flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
                     <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Online</span>
