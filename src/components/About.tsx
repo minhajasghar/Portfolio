@@ -28,8 +28,8 @@ export default function About() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
             <div>
-              <h4 className="text-blue-500 font-bold text-3xl mb-1">2+</h4>
-              <p className="text-zinc-500 text-xs uppercase tracking-widest">Years Experience</p>
+              <h4 className="text-blue-500 font-bold text-3xl mb-1">3+</h4>
+              <p className="text-zinc-500 text-xs uppercase tracking-widest">Years Learning AI</p>
             </div>
             <div>
               <h4 className="text-blue-500 font-bold text-3xl mb-1">10+</h4>
@@ -40,8 +40,8 @@ export default function About() {
               <p className="text-zinc-500 text-xs uppercase tracking-widest">Internships</p>
             </div>
             <div>
-              <h4 className="text-blue-500 font-bold text-3xl mb-1">15+</h4>
-              <p className="text-zinc-500 text-xs uppercase tracking-widest">Models Deployed</p>
+              <h4 className="text-blue-500 font-bold text-3xl mb-1">10+</h4>
+              <p className="text-zinc-500 text-xs uppercase tracking-widest">AI Models Built</p>
             </div>
           </div>
         </motion.div>
