@@ -1,6 +1,6 @@
 # Minhaj Asghar — AI & ML Portfolio
 
-🚀 Live Portfolio: [minhajasghar.vercel.app](https://minhaj-asghar-portfolio.vercel.app)
+🚀 Live Portfolio: [minhajasghar.vercel.app](https://minhajasghar.vercel.app)
 
 ## About
 AI Engineer & Machine Learning Developer specializing in 
