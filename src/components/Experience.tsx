@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 
 const experiences = [
   {
-    role: "AI Intern",
+    role: "AI Engineer",
     company: "TNT Innovations",
     period: "Onsite | April 2026 – Present",
     bullets: [
@@ -52,7 +52,7 @@ export default function Experience() {
       <div className="container mx-auto px-6">
         <SectionHeader 
           title="Professional Experience" 
-          subtitle="My journey in the industry through internships and real-world projects."
+          subtitle="My journey in AI engineering — from internships to building real-world, production-ready solutions."
         />
         
         <div className="space-y-8 max-w-4xl">
