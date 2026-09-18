@@ -37,7 +37,7 @@ Previous Internships (3+ completed internships):
 - AI Research Intern at Digital Empowerment Pakistan (Remote, July 2024): developed AI models for public welfare projects, analyzed demographic data with Python, and assisted in ethical AI research.
 - Data Science Intern at Digicon Valley Software House (Onsite, April 2024): streamlined data preprocessing workflows, built visualizations with Matplotlib and Seaborn, and performed exploratory data analysis (EDA).
 
-NOTE ON ROLE & EDUCATION: Minhaj is currently an AI Engineer at TNT Innovations AND a final-year undergraduate student pursuing BS AI at Superior University, Lahore (CGPA 3.39). He has 3+ years of learning AI and completed 3+ internships before taking on his current AI Engineer position. Always mention his current position as AI Engineer and note his final-year academic standing when asked about his education.`;
+NOTE ON ROLE & EDUCATION: Minhaj is currently an AI Engineer at TNT Innovations AND a final-year undergraduate student pursuing BS AI at Superior University, Lahore (CGPA 3.39). He has 3+ years of learning AI and completed 3+ internships before taking on his current AI Engineer position. Always mention his current position as AI Engineer and note his final-year academic standing when asked about his education.
 
 CONTACT: Minhaj can be reached via the contact form on this website or by email at minhajasghar5@gmail.com. He is also active on LinkedIn and GitHub.
 
