@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Minhaj Asghar | AI Engineer & Machine Learning Developer",
-  description: "Portfolio of Minhaj Asghar, a BS Artificial Intelligence student specializing in Machine Learning, Computer Vision, and Generative AI.",
+  description: "Portfolio of Minhaj Asghar, an AI Engineer and Machine Learning Developer specializing in Computer Vision, Machine Learning, and Generative AI.",
   keywords: ["AI Engineer", "Machine Learning", "Computer Vision", "Generative AI", "Portfolio", "Minhaj Asghar"],
   icons: {
     icon: "/favicon.svg",

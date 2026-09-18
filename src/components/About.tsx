@@ -19,24 +19,24 @@ export default function About() {
           className="glass p-8 md:p-12 rounded-2xl border border-white/5"
         >
           <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-4xl">
-            AI Engineer and Machine Learning Developer with expertise in building scalable, real-world systems leveraging the power of 
+            <span className="text-blue-400 font-semibold">AI Engineer</span> and Machine Learning Developer with expertise in building scalable, real-world systems leveraging the power of 
             <span className="text-white font-semibold"> Python, Computer Vision, and NLP</span>. 
-            I specialize in delivering high-impact 
+            Currently working as an <span className="text-blue-400 font-semibold">AI Engineer at TNT Innovations</span>, I specialize in delivering high-impact 
             <span className="text-white font-semibold"> automation, predictive analytics, and intelligent monitoring solutions</span>{" "}
-            that drive business innovation.
+            that drive real-world business innovation.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
             <div>
               <h4 className="text-blue-500 font-bold text-3xl mb-1">3+</h4>
-              <p className="text-zinc-500 text-xs uppercase tracking-widest">Years Learning AI</p>
+              <p className="text-zinc-500 text-xs uppercase tracking-widest">Years in AI</p>
             </div>
             <div>
               <h4 className="text-blue-500 font-bold text-3xl mb-1">10+</h4>
               <p className="text-zinc-500 text-xs uppercase tracking-widest">Projects Built</p>
             </div>
             <div>
-              <h4 className="text-blue-500 font-bold text-3xl mb-1">4+</h4>
+              <h4 className="text-blue-500 font-bold text-3xl mb-1">3+</h4>
               <p className="text-zinc-500 text-xs uppercase tracking-widest">Internships</p>
             </div>
             <div>

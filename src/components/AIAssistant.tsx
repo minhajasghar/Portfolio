@@ -10,21 +10,21 @@ type Message = {
 };
 
 const KNOWLEDGE_BASE = {
-  about: "Minhaj Asghar is an AI Engineer and Machine Learning Developer specializing in Computer Vision, NLP, and automation. He has 2+ years of experience and has built over 10+ professional projects.",
-  projects: "His flagship projects include Stafflytics AI (restaurant business intelligence) and SmartAttend AI (intelligent attendance system). He has also worked on Traffic Sign Recognition and PhishGuard.",
-  skills: "He is proficient in Python, YOLO, OpenCV, TensorFlow, PyTorch, and Flask. He also has strong experience in SQL and cloud deployments.",
+  about: "Minhaj Asghar is an AI Engineer and Machine Learning Developer specializing in Computer Vision, NLP, and automation. He currently works as an AI Engineer at TNT Innovations and has built over 10+ professional AI projects.",
+  projects: "His flagship projects include Stafflytics AI (restaurant business intelligence with YOLOv8-Pose), Brandflux (brand content automation platform), and DocSlot (clinic management system).",
+  skills: "He is proficient in Python, YOLO, OpenCV, TensorFlow, PyTorch, LangChain, and FastAPI/Next.js. He also has strong experience in edge CV deployment and SQL.",
   contact: "You can contact Minhaj via the contact form on this website or email him at minhajasghar5@gmail.com. He is also active on LinkedIn and GitHub.",
-  experience: "He has completed 4+ internships in the AI field and is currently working on high-impact intelligent monitoring solutions."
+  experience: "Minhaj is currently working as an AI Engineer at TNT Innovations, where he designs real-time video analytics and automated monitoring CV pipelines. Prior to this role, he completed 3+ internships in Machine Learning, AI Research, and Data Science."
 };
 
 const getLocalResponse = (query: string): string => {
   const q = query.toLowerCase();
   if (q.includes("project") || q.includes("work")) return KNOWLEDGE_BASE.projects;
-  if (q.includes("about") || q.includes("who is")) return KNOWLEDGE_BASE.about;
+  if (q.includes("about") || q.includes("who is") || q.includes("role") || q.includes("title")) return KNOWLEDGE_BASE.about;
   if (q.includes("skill") || q.includes("tech") || q.includes("language")) return KNOWLEDGE_BASE.skills;
   if (q.includes("contact") || q.includes("email") || q.includes("hire")) return KNOWLEDGE_BASE.contact;
-  if (q.includes("experience") || q.includes("internship")) return KNOWLEDGE_BASE.experience;
-  return "That's a great question! Based on Minhaj's portfolio, he specializes in AI and Machine Learning. For specific details about his projects or skills, feel free to ask!";
+  if (q.includes("experience") || q.includes("internship") || q.includes("job")) return KNOWLEDGE_BASE.experience;
+  return "That's a great question! Minhaj is an AI Engineer specializing in Computer Vision, Machine Learning, and Generative AI. For specific details about his experience, projects, or skills, feel free to ask!";
 };
 
 export default function AIAssistant() {

@@ -24,9 +24,10 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-sm font-medium text-blue-400 mb-8 inline-block backdrop-blur-sm"
+              className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-sm font-medium text-blue-400 mb-8 inline-flex items-center gap-2 backdrop-blur-sm"
             >
-              BS Artificial Intelligence
+              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+              AI Engineer @ TNT Innovations
             </motion.span>
             
             <div className="relative">
@@ -36,7 +37,7 @@ export default function Hero() {
             </div>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl text-zinc-400 mb-8 font-light tracking-tight leading-relaxed">
-              <span className="text-blue-400 font-medium">AI Engineer</span> & <span className="text-blue-400 font-medium">Machine Learning</span> Developer
+              <span className="text-blue-400 font-semibold">AI Engineer</span> & <span className="text-zinc-200 font-medium">Machine Learning Developer</span>
             </h2>
             
             <p className="text-zinc-400 mb-12 max-w-lg mx-auto lg:mx-0 text-lg md:text-xl leading-relaxed">
@@ -91,7 +92,7 @@ export default function Hero() {
               
               {/* Floating Badge */}
               <div className="absolute -right-4 top-1/4 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
-                <span className="text-xs font-bold text-blue-400">AI SPECIALIST</span>
+                <span className="text-xs font-bold text-blue-400">AI ENGINEER</span>
               </div>
             </div>
           </motion.div>
