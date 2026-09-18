@@ -10,21 +10,23 @@ type Message = {
 };
 
 const KNOWLEDGE_BASE = {
-  about: "Minhaj Asghar is an AI Engineer and Machine Learning Developer specializing in Computer Vision, NLP, and automation. He currently works as an AI Engineer at TNT Innovations and has built over 10+ professional AI projects.",
-  projects: "His flagship projects include Stafflytics AI (restaurant business intelligence with YOLOv8-Pose), Brandflux (brand content automation platform), and DocSlot (clinic management system).",
-  skills: "He is proficient in Python, YOLO, OpenCV, TensorFlow, PyTorch, LangChain, and FastAPI/Next.js. He also has strong experience in edge CV deployment and SQL.",
+  about: "Minhaj Asghar is an AI Engineer and final-year BS Artificial Intelligence student at Superior University, Lahore (CGPA 3.39, 2023–2027). He has 3+ years of learning AI, completed 3+ internships, and currently works as an AI Engineer at TNT Innovations.",
+  education: "Minhaj is in his final year of Bachelor of Science in Artificial Intelligence at Superior University, Lahore (2023–2027) with a CGPA of 3.39.",
+  projects: "His flagship projects include Stafflytics AI (restaurant BI with YOLOv8-Pose), Chaty-Waty (multi-platform AI customer service system with CrewAI, Gemini API & Meta APIs built at TNT Innovations), and Brandflux (brand content generation platform).",
+  skills: "He is proficient in Python, CrewAI, YOLO, OpenCV, TensorFlow, PyTorch, LangChain, and FastAPI/Next.js. He also has strong experience in edge CV deployment and SQL.",
   contact: "You can contact Minhaj via the contact form on this website or email him at minhajasghar5@gmail.com. He is also active on LinkedIn and GitHub.",
-  experience: "Minhaj is currently working as an AI Engineer at TNT Innovations, where he designs real-time video analytics and automated monitoring CV pipelines. Prior to this role, he completed 3+ internships in Machine Learning, AI Research, and Data Science."
+  experience: "Minhaj is currently working as an AI Engineer at TNT Innovations, where he designs real-time video analytics and multi-agent systems. Prior to this role, he completed 3+ internships in Machine Learning, AI Research, and Data Science."
 };
 
 const getLocalResponse = (query: string): string => {
   const q = query.toLowerCase();
-  if (q.includes("project") || q.includes("work")) return KNOWLEDGE_BASE.projects;
+  if (q.includes("project") || q.includes("work") || q.includes("chaty")) return KNOWLEDGE_BASE.projects;
+  if (q.includes("education") || q.includes("university") || q.includes("gpa") || q.includes("degree") || q.includes("study") || q.includes("student")) return KNOWLEDGE_BASE.education;
   if (q.includes("about") || q.includes("who is") || q.includes("role") || q.includes("title")) return KNOWLEDGE_BASE.about;
   if (q.includes("skill") || q.includes("tech") || q.includes("language")) return KNOWLEDGE_BASE.skills;
   if (q.includes("contact") || q.includes("email") || q.includes("hire")) return KNOWLEDGE_BASE.contact;
   if (q.includes("experience") || q.includes("internship") || q.includes("job")) return KNOWLEDGE_BASE.experience;
-  return "That's a great question! Minhaj is an AI Engineer specializing in Computer Vision, Machine Learning, and Generative AI. For specific details about his experience, projects, or skills, feel free to ask!";
+  return "That's a great question! Minhaj is an AI Engineer and final-year BS Artificial Intelligence student at Superior University Lahore (CGPA 3.39). For specific details about his experience, projects, or skills, feel free to ask!";
 };
 
 export default function AIAssistant() {

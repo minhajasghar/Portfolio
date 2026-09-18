@@ -27,7 +27,7 @@ export default function Hero() {
               className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-sm font-medium text-blue-400 mb-8 inline-flex items-center gap-2 backdrop-blur-sm"
             >
               <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              AI Engineer @ TNT Innovations
+              AI Engineer @ TNT Innovations • Final Year BS AI
             </motion.span>
             
             <div className="relative">
@@ -41,7 +41,7 @@ export default function Hero() {
             </h2>
             
             <p className="text-zinc-400 mb-12 max-w-lg mx-auto lg:mx-0 text-lg md:text-xl leading-relaxed">
-              Building intelligent systems with Machine Learning, Computer Vision, and Generative AI.
+              Final-year BS Artificial Intelligence student & practicing AI Engineer building intelligent multi-agent systems, computer vision, and scalable ML solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">

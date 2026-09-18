@@ -6,26 +6,30 @@ import SectionHeader from "./SectionHeader";
 const projects = [
   {
     title: "Stafflytics AI",
+    subtitle: "Real-Time Restaurant Business Intelligence",
     description: "AI-powered business intelligence system for restaurants using computer vision and machine learning. Features real-time staff tracking, automated attendance, and performance analytics.",
     tags: ["YOLOv8-Pose", "Flask", "MySQL", "RTSP"],
     flagship: true,
     githubUrl: "https://github.com/minhajasghar/Stafflytics-AI"
   },
   {
-    title: "Brandflux",
-    description: "A brand content automation platform with client login. Clients submit their brand website and app, then receive ready-to-post content for Instagram, Facebook, and LinkedIn.",
-    tags: ["Next.js", "FastAPI", "Gemini AI", "Web Scrapping"],
+    title: "Chaty-Waty",
+    subtitle: "AI Multi-Platform Customer Service System",
+    note: "Built at TNT Innovations • Multi-Agent Architecture",
+    description: "Multi-platform AI customer service system automating support across Facebook, Instagram, WhatsApp, and Lazada with a CrewAI multi-agent architecture and Gemini API for context-aware, order-aware responses.",
+    tags: ["CrewAI", "Python", "Gemini API", "Meta APIs", "Laravel", "MySQL"],
     flagship: true,
-    githubUrl: "https://github.com/minhajasghar/Brandflux"
+    githubUrl: "https://github.com/minhajasghar/chaty-waty",
+    agentRepoUrl: "https://github.com/minhajasghar/CrewAI-MySQL-Agent"
   },
   {
-    title: "DocSlot",
-    description: "Full-stack clinic management system with multi-doctor support, live token-based queue, patient self-booking, billing tracker, and WhatsApp notifications. Built for real-world clinic use.",
-    tags: ["Next.js", "Node.js", "SQLite", "Whatsapp API"],
+    title: "Brandflux",
+    subtitle: "Autonomous Content Generation Platform",
+    description: "A brand content automation platform with client login. Clients submit their brand website and app, then receive ready-to-post content for Instagram, Facebook, and LinkedIn.",
+    tags: ["Next.js", "FastAPI", "Gemini AI", "Web Scraping"],
     flagship: true,
-    githubUrl: "https://github.com/minhajasghar/DocSlot"
-  },
-
+    githubUrl: "https://github.com/minhajasghar/Brandflux"
+  }
 ];
 
 export default function Projects() {
@@ -64,23 +68,49 @@ export default function Projects() {
                   ) : (
                     <div />
                   )}
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-500 hover:text-blue-400 transition-colors"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                      </svg>
-                    </a>
-                  )}
+                  <div className="flex items-center gap-2.5">
+                    {project.agentRepoUrl && (
+                      <a
+                        href={project.agentRepoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] px-2.5 py-1 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 transition-colors flex items-center gap-1 font-mono"
+                        title="AI Agent Sub-Repository"
+                      >
+                        ↳ AI Agent
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-500 hover:text-blue-400 transition-colors"
+                        title="GitHub Repository"
+                      >
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-2xl md:text-3xl font-bold mb-1 group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
+
+                {project.subtitle && (
+                  <span className="text-xs font-semibold text-blue-400/90 uppercase tracking-wider mb-2 block">
+                    {project.subtitle}
+                  </span>
+                )}
+
+                {project.note && (
+                  <span className="text-[11px] text-zinc-500 mb-3 block italic">
+                    {project.note}
+                  </span>
+                )}
 
                 <p className="text-zinc-400 mb-8 flex-grow leading-relaxed text-lg">
                   {project.description}

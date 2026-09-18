@@ -18,12 +18,12 @@ const skills = [
   {
     category: "GenAI & Automation",
     icon: <PenTool className="text-yellow-500" />,
-    items: ["LangChain", "RAG Systems", "AI Agents", "Gemini API", "Prompt Engineering"]
+    items: ["CrewAI & Multi-Agent Systems", "LangChain & RAG", "AI Agents", "Gemini API", "Prompt Engineering"]
   },
   {
     category: "Full-Stack Development",
     icon: <Terminal className="text-red-500" />,
-    items: ["Next.js", "Node.js / Express", "FastAPI", "TypeScript", "REST APIs"]
+    items: ["Next.js", "FastAPI", "Laravel", "Node.js / Express", "Meta & REST APIs"]
   },
   {
     category: "Data & Databases",
