@@ -10,12 +10,12 @@ type Message = {
 };
 
 const KNOWLEDGE_BASE = {
-  about: "Minhaj Asghar is an AI Engineer and final-year BS Artificial Intelligence student at Superior University, Lahore (CGPA 3.39, 2023–2027). He has 3+ years of learning AI, completed 3+ internships, and currently works as an AI Engineer at TNT Innovations.",
+  about: "Minhaj Asghar is an AI Engineer and final-year BS Artificial Intelligence student at Superior University, Lahore (CGPA 3.39, 2023–2027). He has 3+ years of learning AI, completed 3+ internships, and currently works as an AI Engineer & Full-Stack Developer at TNT Innovations.",
   education: "Minhaj is in his final year of Bachelor of Science in Artificial Intelligence at Superior University, Lahore (2023–2027) with a CGPA of 3.39.",
   projects: "His flagship projects include Stafflytics AI (restaurant BI with YOLOv8-Pose), Chaty-Waty (multi-platform AI customer service system with CrewAI, Gemini API & Meta APIs built at TNT Innovations), and Brandflux (brand content generation platform).",
   skills: "He is proficient in Python, CrewAI, YOLO, OpenCV, TensorFlow, PyTorch, LangChain, and FastAPI/Next.js. He also has strong experience in edge CV deployment and SQL.",
   contact: "You can contact Minhaj via the contact form on this website or email him at minhajasghar5@gmail.com. He is also active on LinkedIn and GitHub.",
-  experience: "Minhaj is currently working as an AI Engineer at TNT Innovations, where he designs real-time video analytics and multi-agent systems. Prior to this role, he completed 3+ internships in Machine Learning, AI Research, and Data Science."
+  experience: "Minhaj is currently working as an AI Engineer & Full-Stack Developer at TNT Innovations, where he designs real-time video analytics and multi-agent systems. Prior to this role, he completed 3+ internships in Machine Learning, AI Research, and Data Science."
 };
 
 const getLocalResponse = (query: string): string => {
