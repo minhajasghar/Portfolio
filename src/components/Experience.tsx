@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 
 const experiences = [
   {
-    role: "AI Engineer",
+    role: "AI Engineer & Full-Stack Developer",
     company: "TNT Innovations",
     period: "Onsite | April 2026 – Present",
     isCurrent: true,
