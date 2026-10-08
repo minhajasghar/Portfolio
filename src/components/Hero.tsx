@@ -37,7 +37,7 @@ export default function Hero() {
             </div>
             
             <h2 className="text-xl md:text-2xl lg:text-3xl text-zinc-400 mb-8 font-light tracking-tight leading-relaxed">
-              <span className="text-blue-400 font-semibold">AI Engineer</span> & <span className="text-zinc-200 font-medium">Machine Learning Developer</span>
+              <span className="text-blue-400 font-semibold">AI/ML Engineer</span> & <span className="text-zinc-200 font-medium">Full-Stack Developer</span>
             </h2>
             
             <p className="text-zinc-400 mb-12 max-w-lg mx-auto lg:mx-0 text-lg md:text-xl leading-relaxed">
