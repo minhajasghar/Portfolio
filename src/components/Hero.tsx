@@ -81,7 +81,7 @@ export default function Hero() {
                 <img 
                   src="/ME%20(2).jpeg" 
                   alt="Minhaj Asghar" 
-                  className="w-full h-full object-cover object-[center_85%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.4] group-hover:scale-[1.35]"
+                  className="w-full h-full object-cover object-[center_85%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.2] group-hover:scale-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
               </motion.div>
