@@ -79,7 +79,7 @@ export default function Hero() {
                 className="relative w-full h-full rounded-3xl overflow-hidden border border-white/10 bg-zinc-900 group z-10 shadow-2xl"
               >
                 <img 
-                  src="/me.jpeg" 
+                  src="/ME%20(2).jpeg" 
                   alt="Minhaj Asghar" 
                   className="w-full h-full object-cover object-top grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                 />
