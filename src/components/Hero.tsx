@@ -82,7 +82,7 @@ export default function Hero() {
                 <img 
                   src="/ME%20(2).jpeg" 
                   alt="Minhaj Asghar" 
-                  className="w-full h-full object-cover object-[center_68%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.2] group-hover:scale-[1.15]"
+                  className="w-full h-full object-cover object-[center_68%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.15] group-hover:scale-[1.1]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
               </motion.div>
@@ -92,8 +92,8 @@ export default function Hero() {
               <div className="absolute -top-6 -left-6 w-32 h-32 border-l-[3px] border-t-[3px] border-white/10 rounded-tl-3xl z-0" />
               
               {/* Floating Badge */}
-              <div className="absolute -right-4 top-1/4 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
-                <span className="text-xs font-bold text-blue-400">OPEN TO OPPORTUNITIES</span>
+              <div className="absolute -right-4 bottom-12 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
+                <span className="text-xs font-bold text-blue-400">AI ENGINEER</span>
               </div>
             </div>
           </motion.div>
