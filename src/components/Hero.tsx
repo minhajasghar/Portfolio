@@ -40,8 +40,8 @@ export default function Hero() {
               <span className="text-blue-400 font-semibold">AI/ML Engineer</span> & <span className="text-zinc-200 font-medium">Full-Stack Developer</span>
             </h2>
             
-            <p className="text-zinc-400 mb-12 max-w-lg mx-auto lg:mx-0 text-lg md:text-xl leading-relaxed">
-              Final-year BS Artificial Intelligence student & practicing AI Engineer building intelligent multi-agent systems, computer vision, and scalable ML solutions.
+            <p className="text-zinc-300 mb-12 max-w-lg mx-auto lg:mx-0 text-lg md:text-xl leading-relaxed">
+              I build multi-agent AI systems, computer vision pipelines, and full-stack products, from model to deployment.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
@@ -54,10 +54,11 @@ export default function Hero() {
               </a>
               <a 
                 href="/Minhaj_Asghar_CV.pdf" 
-                download="Minhaj_Asghar_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-semibold flex items-center gap-2 group backdrop-blur-sm"
               >
-                Download CV
+                View CV
                 <Download size={20} className="group-hover:translate-y-0.5 transition-transform text-zinc-400 group-hover:text-white" />
               </a>
             </div>
@@ -81,7 +82,7 @@ export default function Hero() {
                 <img 
                   src="/ME%20(2).jpeg" 
                   alt="Minhaj Asghar" 
-                  className="w-full h-full object-cover object-[center_75%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.2] group-hover:scale-[1.15]"
+                  className="w-full h-full object-cover object-[center_68%] origin-bottom grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 scale-[1.2] group-hover:scale-[1.15]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
               </motion.div>
@@ -92,7 +93,7 @@ export default function Hero() {
               
               {/* Floating Badge */}
               <div className="absolute -right-4 top-1/4 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
-                <span className="text-xs font-bold text-blue-400">AI ENGINEER</span>
+                <span className="text-xs font-bold text-blue-400">OPEN TO OPPORTUNITIES</span>
               </div>
             </div>
           </motion.div>
