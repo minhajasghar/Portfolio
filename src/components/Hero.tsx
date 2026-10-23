@@ -20,15 +20,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center lg:text-left relative z-20 order-2 lg:order-1"
           >
-            <motion.span 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-sm font-medium text-blue-400 mb-8 inline-flex items-center gap-2 backdrop-blur-sm"
-            >
-              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              AI Engineer @ TNT Innovations • Final Year BS AI
-            </motion.span>
+
             
             <div className="relative">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-8xl font-bold tracking-tight mb-6 pb-2 bg-gradient-to-br from-white via-zinc-100 to-blue-500 bg-clip-text text-transparent leading-[1.2] whitespace-nowrap pr-2 drop-shadow-sm">

@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Minhaj Asghar | AI Engineer & Machine Learning Developer",
+  title: "Minhaj Asghar | AI/ML Engineer",
   description: "Portfolio of Minhaj Asghar, an AI Engineer and Machine Learning Developer specializing in Computer Vision, Machine Learning, and Generative AI.",
   keywords: ["AI Engineer", "Machine Learning", "Computer Vision", "Generative AI", "Portfolio", "Minhaj Asghar"],
   icons: {
