@@ -91,6 +91,11 @@ export default function Hero() {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-[3px] border-b-[3px] border-blue-500/40 rounded-br-3xl z-20" />
               <div className="absolute -top-6 -left-6 w-32 h-32 border-l-[3px] border-t-[3px] border-white/10 rounded-tl-3xl z-0" />
               
+              {/* Floating Badge */}
+              <div className="absolute -right-4 bottom-12 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
+                <span className="text-xs font-bold text-blue-400">📍 Lahore, Pakistan</span>
+              </div>
+              
 
             </div>
           </motion.div>
