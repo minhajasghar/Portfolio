@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -93,7 +93,7 @@ export default function Hero() {
               
               {/* Floating Badge */}
               <div className="absolute -right-4 bottom-12 glass px-4 py-2 rounded-lg border border-white/10 shadow-xl z-30 animate-bounce-slow hidden md:block">
-                <span className="text-xs font-bold text-blue-400">📍 Lahore, Pakistan</span>
+                <span className="text-xs font-bold text-blue-400 flex items-center gap-1.5"><MapPin size={11} />Lahore, Pakistan</span>
               </div>
               
 
