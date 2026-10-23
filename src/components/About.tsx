@@ -19,10 +19,7 @@ export default function About() {
           className="glass p-8 md:p-12 rounded-2xl border border-white/5"
         >
           <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed max-w-4xl">
-            <span className="text-blue-400 font-semibold">AI Engineer</span> and final-year <span className="text-white font-medium">BS Artificial Intelligence student</span> at Superior University, Lahore (CGPA 3.39). 
-            Currently engineering production-grade systems as an <span className="text-blue-400 font-semibold">AI Engineer at TNT Innovations</span>, I specialize in 
-            <span className="text-white font-semibold"> multi-agent architectures, computer vision pipelines, and intelligent automation</span>{" "}
-            that drive real business impact.
+            I&apos;m an <span className="text-blue-400 font-semibold">AI Engineer at TNT Innovations</span>, working where models meet products: multi-agent systems, computer vision pipelines, and the backend and interfaces that make them usable. I like owning a project end to end, from the first prototype to something people actually use. I&apos;m also a final-year <span className="text-white font-medium">BS Artificial Intelligence</span> student at Superior University, Lahore.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
